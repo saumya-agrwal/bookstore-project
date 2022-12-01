@@ -1,7 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { BookModule } from './book/book.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+// creating route to BookModule
+const routes: Routes = [
+  {
+    path:'',
+    pathMatch:'full',
+    redirectTo:'books',
+  },
+  {
+    path:'books',
+    loadChildren: () => BookModule,
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

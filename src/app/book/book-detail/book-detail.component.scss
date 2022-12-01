@@ -1,0 +1,32 @@
+
+$header-height: 70px;
+
+.container {
+    height: calc(100vh - $header-height);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image-conatiner {
+    height: 100%;
+    flex: 20%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-content {
+    height: 100%;
+    flex: 80%;
+    padding: 20px;
+    font-family: "Helvetica";
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+
+
+}

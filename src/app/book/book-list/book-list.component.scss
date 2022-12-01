@@ -1,0 +1,56 @@
+$header-height: 70px;
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - $header-height);
+}
+
+.sidebar-container {
+    flex: 20%;
+    border-right: 1px solid black;
+    height: 100%;
+    overflow-y: auto;
+   
+}
+
+.category-list {
+    padding: 20px;
+    list-style: none;
+} 
+
+.category-list li {
+    font-family: "Helvetica Neue";
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.category-list li:hover {
+    text-decoration: underline;
+    // font-weight: 600;
+}
+
+.selected-category {
+    font-weight: 600;
+    background-color: aqua;
+}
+
+.card-container {
+    flex: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: #f5fcfc;
+    overflow-y: scroll;
+
+}
+
+.book-image {
+    height: 10px;
+  }
+
